@@ -105,3 +105,26 @@ html {
 @media screen and (max-width: 400px) {
     .sidebar a { text-align: center; }
 }
+
+.treeview-ul{
+  margin-left: 1.5rem;
+  text-align: left;
+}
+
+.Section1class {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.Section1class h1{
+  display: flex;
+  justify-content: center;
+}
+
+.Section1class p{
+  font-weight: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: left;
+}
+
