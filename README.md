@@ -1,11 +1,10 @@
 # Website-Project
 Website project for BSP1C_B
 To do:
-Push to Github repository (Done /)
-Try different styles of formatting (Done /)
-- Centered a bit more
-- Bullet points
-- Other
-Get one chart by end of session (06/02/2026)
-Column headers need to be changed (Lowercase)
-Remove commas from GDPR enforcement tracker
+- Threshold for Bar graph
+- Rewrite text (eventually)
+- Other plots (- Pie chart for Ireland Article breaches)
+- Seperate Irish GDPR Data (Piechart)
+- Carosuel (Change x/y axis)
+- Cumulative fines
+- Reference data (GDPR Enforcement Tracker)
