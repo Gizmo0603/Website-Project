@@ -128,3 +128,23 @@ html {
   text-align: left;
 }
 
+/* Ensure carousel arrows are visible and z-index above content */
+#myCarousel .carousel-control-prev,
+#myCarousel .carousel-control-next {
+  width: 5%;          /* can increase if needed */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+#myCarousel .carousel-control-prev-icon,
+#myCarousel .carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.5); /* semi-transparent so you can see them */
+  border-radius: 50%;                /* nice circle */
+}
+
+.carousel-item > div {
+  display: flex;
+  justify-content: center;  /* horizontal centering */
+  align-items: center;      /* vertical centering */
+  height: 700px;            /* same as your SVG height */
+}

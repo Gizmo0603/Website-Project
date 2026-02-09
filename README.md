@@ -5,6 +5,6 @@ To do:
 - Rewrite text (eventually)
 - Other plots (- Pie chart for Ireland Article breaches)
 - Seperate Irish GDPR Data (Piechart)
-- Carosuel (Change x/y axis)
+- Carosuel (Change x/y axis) Done /
 - Cumulative fines
 - Reference data (GDPR Enforcement Tracker)
