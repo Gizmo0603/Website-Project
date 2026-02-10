@@ -2,9 +2,9 @@
 Website project for BSP1C_B
 To do:
 - Threshold for Bar graph
-- Rewrite text (eventually)
+- Rewrite text (eventually) ? In progress
 - Other plots (- Pie chart for Ireland Article breaches)
 - Seperate Irish GDPR Data (Piechart)
 - Carosuel (Change x/y axis) Done /
-- Cumulative fines
+- Cumulative fines Done /
 - Reference data (GDPR Enforcement Tracker)

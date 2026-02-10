@@ -19,9 +19,12 @@
     <div id="sidebar" class="sidebar"> <!-- As name implies, sidebar.-->
 
         <a class="active" href="#Section-1">Section 1</a> <!-- Anchors-->
+        <a class="sub-section" href="#Section-1-1">Section 1.1</a>
+        <a class="sub-section" href="#Section-1-2">Section 1.2</a>
         <a href="#Section-2">Section 2</a>
         <a href="#Section-3">Section 3</a>
-        <a href="#Section-4">Section 3</a>
+        <a href="#Section-4">Section 4</a>
+        <a href="#Section-5">References </a>
 
     </div>
 
@@ -29,33 +32,49 @@
     <div id="main" class="main">
 
         <section class="Back-Image">
+
             <img src="EU FLAG.webp" alt="EU Flag">
             <h1>GDPR Fines and Analysis</h1>
 
         </section>
 
-        <container class="Section1class">
+        <div class="Section1class">
 
             <section id="Section-1">
-
-            <h1>GDPR</h1>
+              
+              <h1 id="Section-1-1">GDPR and Fines</h1>
             
-            <p> Words are indeed here. There would be a funny thing that happens if it were to extend far enough. Not that I would actually know what it is, y'know. But lets say hypothetically there was, what then? Would it be an incorrect thing to happen or nah?.</p>
+              <p> GDPR (General Data Protection Regulation) is a set of regulations and articles put into place by the European Union in 2016. It was fully implemented in 2018 for all EU members. 
+              The purpose of this was to replace the outdated act from 1995 (The Data Protection Directive) and to modernise how data is handled, whilst allowing a framework across the EU to ensure compliance is met. 
+              GDPR consists of several articles consisting of several subsections and requirements, each of which having to be met. </p>
 
-            <p> Yep, these are words haha.</p>
+              <p> If they are not met, then the offending party is met with a fine. Whether this be a set amount or a percentage depends on the company's size, ensuring that businesses get punished the same. 
+              Other issues caused by this fine are loss of reputation and loss of trust by consumers, among other things. Below this, there are a handful of articles. These Articles (and Sub-sections) are put
+              in place to serve as an extensive guideline for companies to follow. They are available for the public to view, but an example is the following:   </p>
 
-            <ul class="treeview-ul">
-                <div class="li-right">
-                   <li> Item 1 </li>
-                    <li> Item 2 </li>
-                    <li> Item 3 </li>
-                    <li> Item 4 </li>
-                </div>
-            </ul>
+            <div id="Section-1-2">
+                <ul class="treeview-ul">
+                    <li class="li-right"> Personal data shall be:<sup>1</sup> 
+                      <li> processed lawfully, fairly and in a transparent manner in relation to the data subject (‘lawfulness, fairness and transparency’); </li>
+                      <li> collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes 
+                        in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes (‘purpose limitation’);</li>
+                      <li>adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed (‘data minimisation’);</li>
+                      <li>accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that are inaccurate, having regard to the purposes for which they are processed, are erased or rectified 
+                        without delay (‘accuracy’);</li>
+                      <li>kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal 
+                        data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) subject to implementation of the appropriate technical
+                         and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject (‘storage limitation’);</li>
+                      <li>processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or
+                        organisational measures (‘integrity and confidentiality’).</li>
+                      </li>
+                      <li>The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 (‘accountability’).</li>
+
+                </ul>
+            </div>
 
         </section>
 
-        </container>
+      </div>
         
         <section id="Section-2">
 
@@ -250,6 +269,106 @@
     });
   })();
 
+//chart 3
+
+(function() {
+  const margin = { top: 40, right: 40, bottom: 80, left: 100 };
+  const width = 1000 - margin.left - margin.right;
+  const height = 600 - margin.top - margin.bottom;
+
+  const svg = d3.select("#chart-3")
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+  const parseDate = d3.timeParse("%Y-%m-%d"); 
+  // change format if your CSV date format differs
+
+  d3.csv("gdpr_fines.csv").then(data => {
+
+    // clean fields we need only
+    data.forEach(d => {
+      d.date = parseDate(d["Date-of-Decision"]);
+      let value = (d["Fine-Amount"] || "0").toString().replace(/[€,]/g, "");
+      d.fine = +value;
+    });
+
+    data = data.filter(d => d.date && !isNaN(d.fine));
+
+    // group by day + sum
+    const grouped = d3.rollups(
+      data,
+      v => d3.sum(v, d => d.fine),
+      d => d3.timeDay(d.date)
+    ).map(([date, total]) => ({ date, total }))
+     .sort((a,b) => a.date - b.date);
+
+    // cumulative sum
+    let running = 0;
+    grouped.forEach(d => {
+      running += d.total;
+      d.cumulative = running;
+    });
+
+    // scales
+    const x = d3.scaleTime()
+      .domain(d3.extent(grouped, d => d.date))
+      .range([0, width]);
+
+    const y = d3.scaleLinear()
+      .domain([0, d3.max(grouped, d => d.cumulative)]).nice()
+      .range([height, 0]);
+
+    // axes
+    svg.append("g")
+      .attr("transform", `translate(0,${height})`)
+      .call(d3.axisBottom(x));
+
+    svg.append("g")
+      .call(d3.axisLeft(y).tickFormat(d3.format(",")));
+
+    // line generator
+    const line = d3.line()
+      .x(d => x(d.date))
+      .y(d => y(d.cumulative));
+
+    // draw line
+    svg.append("path")
+      .datum(grouped)
+      .attr("fill", "none")
+      .attr("stroke", "#3366cc")
+      .attr("stroke-width", 2)
+      .attr("d", line);
+
+    // draw dots
+    svg.selectAll("circle")
+      .data(grouped)
+      .enter()
+      .append("circle")
+        .attr("cx", d => x(d.date))
+        .attr("cy", d => y(d.cumulative))
+        .attr("r", 4)
+        .attr("fill", "#3366cc");
+
+    // labels
+    svg.append("text")
+      .attr("x", width / 2)
+      .attr("y", height + 55)
+      .attr("text-anchor", "middle")
+      .text("Decision Date");
+
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("x", -height / 2)
+      .attr("y", -70)
+      .attr("text-anchor", "middle")
+      .text("Cumulative Fines (€)");
+
+  });
+})();
+
 </script>
 
 <!-- Bootstrap JS -->
@@ -258,6 +377,12 @@
        
 </section> 
 
+<div id="Section-5">
+
+  <li>[1] - https://gdpr-info.eu/art-5-gdpr/</li>
+
+
+</div>
 
     </div>
 

@@ -61,6 +61,11 @@ h1 { font-size: 2rem; } /* Heading Font size. */
   background-color: darkblue; color: white; 
 }
 
+.sidebar a.sub-section{
+  padding-left: 32px;
+  text-decoration: none;
+}
+
 .sidebar a:hover:not(.active) {
   background-color: #555; color: white;
 }
@@ -107,7 +112,7 @@ html {
 }
 
 .treeview-ul{
-  margin-left: 1.5rem;
+  margin-left: 15rem;
   text-align: left;
 }
 
