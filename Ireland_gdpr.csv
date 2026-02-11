@@ -1,0 +1,93 @@
+﻿Countries,Date-of-Fine,Fine-Amount,Quoted-Art
+IRELAND,23/08/2021,"2,000","Art. 13 GDPR, The Spanish DPA (AEPD) has imposed a fine of EUR 2,000 on a company owner. A person had applied for a job at the controller's company and sent the controller his CV via WhatsApp. Thereby, he was neither informed about the processing of his personal data nor about his data subject rights. The AEPD considered this to be a violation of Art. 13 of the GDPR."
+IRELAND,24/08/2021,"3,000","Art. 28 (1) GDPR, Art. 32 GDPR, Art. 33 GDPR"
+IRELAND,13/08/2021,"2,200","Art. 5 (1) f) GDPR, Art. 25 (1) GDPR, Art. 32 (1) b), d), (2) GDPR"
+IRELAND,26/08/2021,"1,000",Art. 5 (1) c) GDPR
+IRELAND,25/08/2021,"120,000",Art. 32 GDPR
+IRELAND,02/09/2021,"225,000,000","Art. 5 (1) a) GDPR, Art. 12 GDPR, Art. 13 GDPR, Art. 14 GDPR, The Irish DPA (DPC) has imposed a fine of EUR 225,000,000 on WhatsApp Ireland Ltd. The DPA had started extensive investigations into the messaging service's compliance with transparency obligations back in December 2018. In this context, the DPC investigated whether WhatsApp complied with its obligations under the GDPR regarding the provision of information and the transparency of this information to users and non-users of WhatsApp. 
+
+In the course of the investigation, the DPC found that WhatsApp had committed serious violations of Art. 12 GDPR, Art. 13 GDPR and Art. 14 GDPR with respect to the information provided to users. 
+
+Following the investigation, the DPC submitted a draft decision under Art. 60 GDPR to other affected European supervisory authorities in December 2020. The DPC subsequently received objections from eight supervisory authorities. Due to lack of agreement, the DPC initiated a dispute resolution procedure pursuant to Art. 65 GDPR on June 3, 2021. 
+
+The European Data Protection Supervisor (EDPB), by its decision of July 28, 2021, then, required the DPC to reassess and increase its proposed fine based on a number of factors. The EDPS found a violation of the principle of transparency set forth in Article 5(1) a) of the GDPR in addition to the violations found by the DPC, and requested this to be reflected in the final amount of the fine. 
+
+Based on this, the DPC imposed the fine in the amount of EUR 225,000,000. 
+
+The fine is composed as follows:
+
+EUR 90,000,000 for the violation of Art. 5 (1) a) GDPR;
+EUR 30,000,000 for the violation of Art. 12 GDPR;
+EUR 30,000,000 for the violation of Art. 13 GDPR; and
+EUR 75,000,000 for the violation of Art. 14 GDPR.
+
+
+With respect to Art. 12 GDPR and Art. 13 GDPR, the DPC found that WhatsApp had failed to provide information about the nature of the data collection 'in a concise, transparent, intelligible and easily accessible form, using clear and plain language.' This includes making the information easy for children to understand when it is addressed to them. For example, WhatsApp had distributed information about the relationship between WhatsApp and other Facebook companies and the sharing of data under that relationship through a variety of texts. Much of the information provided was of such general nature, moreover, that the DPC deemed it meaningless. Users often had to overcome multiple links to FAQs to get to the information they were looking for on WhatsApp's website. In this regard, the DPC stated that it would be unreasonable to expect users to search the WhatsApp website after failing to find sufficient information in the privacy statement itself.
+
+With regard to Art. 14 GDPR, one of the issues was the impact of a user's consent allowing the messaging platform to have access to his or her contacts. As such, the company searched its users' contact information on their phones for phone numbers and other data, not only from other WhatsApp users, but also from contacts who do not even have a WhatsApp account. The DPC finds that this data had been processed unlawfully, as these contacts (especially those who do not have a WhatsApp account) had not received any information about this processing and therefore could not possibly have given their consent. 
+
+Given the seriousness and the far-reaching nature and impact of the breaches, the DPA concluded that there had also been a violation of the transparency principle from Art. 5 (1) a) GDPR."
+IRELAND,30/08/2021,"6,000","Art. 5 (1) a) GDPR, Art. 6 GDPR, Art. 12 GDPR, Art. 13 GDPR, Art. 21 (4) GDPR, The Spanish DPA (AEPD) imposed a fine of EUR 6,000 on FurnishYourSpace S.L.. The AEPD had received a complaint from the Berlin DPA via the EU Internal Market Information System about the inadequate design of the controller's privacy notice. 
+Namely, the identity and contact details of the controller were provided in the privacy notice, but under a misleading heading that gave the impression that they were provided for a business purpose. In addition, the purposes of the processing were not clearly stated. 
+No information was provided regarding the legal basis, the retention period of the personal data and the data subjects' right to object. Also, the privacy notice was confusing and the wording contained grammatical errors and used terms that are not part of common usage.
+
+In addition, the privacy notice required a tax identification number in order to issue a simplified invoice, i.e., an invoice not exceeding the amount of EUR 3,000. The AEPD found this to be a violation of the principle of legality. 
+
+The fine is composed as follows:
+
+EUR 3,000 for a breach of Art. 12 GDPR and Art. 13 GDPR;
+EUR 1,000 for a breach of Art. 21 (4) GDPR; and
+EUR 2,000 for a breach of Art. 5 (1) a) GDPR and Art. 6 GDPR."
+IRELAND,23/08/2021,"1,800","Art. 32 GDPR, The Spanish DPA (AEPD) has imposed a fine on an agency. The controller had disposed of documents containing personal data of its clients in the garbage. The AEPD considered this to be a lack of security and data protection measures in the sense of Art. 32 GDPR, which states that 'the controller and processor shall implement appropriate technical and organizational measures to ensure an adequate level of security.' The original fine of EUR 3,000 was reduced to EUR 1,800 due to voluntary payment and acknowledgement of responsibility."
+IRELAND,02/09/2021,"4,000","Art. 5 (1) f) GDPR, Art. 32 GDPR, Art. 21 LSSI, The Spanish DPA (AEPD) has fined Automecanica Jerez, S.L. EUR 4,000. The controller had sent commercial e-mails to a large number of people without their consent. In doing so, the controller failed to hide the personal data of the recipients, such as surname, first name and email address, which allowed the other recipients to view the data. The AEPD considered this to be a violation of Article 5 (1) f) GDPR and Article 32 GDPR, as the controller had failed to implement technical and organizational measures to ensure an adequate level of security in the processing of personal data. Furthermore the AEPD found a breach of Art. 21 LSSI."
+IRELAND,08/09/2021,"53,800","Art. 32 GDPR, The Danish DPA has imposed a fine of EUR 53,800 on Midtjylland Region.
+
+On June 12, 2020, the DPA received a notification from the region regarding a personal data security breach pursuant to Art. 33 GDPR. According to the notification, all patients and staff at a lifestyle center were able to access a building where up to 100,000 physical patient records were stored, including health information and personal identity number details. The reason for this was that both staff and patients had been given key cards that allowed them to access all three buildings of the lifestyle center, regardless of whether the user was required to access them. 
+In addition, passersby were able to take a look at the covers of some of the records -which showed personal data such as identity numbers and names - through a window in the building.
+In this context, the DPA found that the Midtjylland Region had not taken adequate security measures for the storage of personal data.
+
+In addition, the region had not established sufficient guidelines for access restrictions when creating key cards, and had not conducted adequate periodic testing, assessment, and evaluation of the security measures taken. 
+
+In evaluating the question of whether a fine should be imposed, the Danish DPA took into account, as an aggravating factor, that the region processed large amounts of sensitive data, such as health data."
+IRELAND,07/09/2021,"1,400",Art. 21 GDPR
+IRELAND,22/07/2021,"200,000","Art. 5 (1) a), c) GDPR, Art. 6 (1) c), e) GDPR, Art. 6 (2) GDPR, Art. 6 (3) b) GDPR"
+IRELAND,22/07/2021,"800,000","Art. 5 GDPR, Art. 12 GDPR, Art. 13 GDPR, Art. 25 GDPR, Art. 28 GDPR, Art. 32 GDPR"
+IRELAND,22/07/2021,"30,000","Art. 5 GDPR, Art. 6 GDPR, Art. 30 GDPR"
+IRELAND,22/07/2021,"400,000","Art. 5 GDPR, Art. 6 GDPR, Art. 30 GDPR, Art. 32 GDPR"
+IRELAND,06/09/2021,"40,000",Art. 32 GDPR
+IRELAND,06/09/2021,"40,000",Art. 32 GDPR
+IRELAND,06/09/2021,"25,000",Art. 32 GDPR
+IRELAND,13/09/2021,"1,000",Art. 13 GDPR
+IRELAND,13/09/2021,"1,000",Art. 13 GDPR
+IRELAND,13/09/2021,"9,000","Art. 6 GDPR, Art. 13 GDPR, The Spanish DPA (AEPD) has imposed a fine of EUR 9,000 on the controller of a website. A person had filed a complaint with the DPA due to the fact that the controller had published his first and last name as well as a screenshot of his Linkedin profile on his website. The controller had neither obtained the data subject's consent for this, nor had he informed him about the processing of his personal data. The DPA considered this to be a violation of Art. 6 GDPR and Art. 13 GDPR."
+IRELAND,16/09/2021,"10,000","Art. 32 GDPR, The Danish DPA has imposed a fine of EUR 10,000 on Favrskov municipality. 
+
+On August 19, 2020, the DPA received a notification from Favrskov Municipality of a personal data breach under Art. 33 GDPR.  The notification stated that during a break-in at the municipality's premises, a laptop was stolen which contained a program that provided an overview of the municipality's care facilities and thus information on the names and personal identity numbers of approximately 100 individuals with physical or mental disabilities.
+
+The computer hard drive in question was not encrypted and the program in question, which contained confidential and sensitive personal data, was not equipped with security measures.
+
+In reviewing the case, the DPO found that Favrskov Municipality had not ensured the encryption of the hard drives of the municipality's laptops for a long period of time prior to August 12, 2020, resulting in an inadequate level of security.
+
+The DPA considered this to be a violation of Art. 32 GDPR, as the municipality had failed to implement appropriate technical and organizational measures to ensure a level of protection commensurate with the risk."
+IRELAND,15/09/2021,"3,000","Art. 16 GDPR, Art. 17 GDPR, Art. 30 GDPR, Art. 31 GDPR"
+IRELAND,16/09/2021,"4,000",Art. 5 (1) c) GDPR
+IRELAND,17/09/2021,"67,200","Art. 32 GDPR, The Danish DPA imposed a fine of EUR 67,200 on Syddanmark Region. 
+On March 9, 2020, the DPA received a notification from Syddanmark Region regarding a personal data breach according to Art. 33 GDPR. The Syddanmark Region states that since May 2011, a PowerPoint presentation was available on its website that had been created at Odense University Hospital for training purposes and contained charts with personal data - including health information and ID card number details - of 3,915 patients. 
+The region used a screening tool to periodically check for inadvertent postings of personal identity numbers on its website. However, the screening tool was unable to scan the underlying data in PowerPoint presentations.
+In this context, the DPA found that the region had not implemented appropriate technical and organizational measures to ensure a level of protection appropriate to the risk. 
+In assessing whether a fine should be imposed, the DPA took into aggravating consideration the fact that Syddanmark Region processes large amounts of personal data, including health data - which is of a sensitive nature."
+IRELAND,26/08/2021,"20,000","Art. 12 (1), (2), (3) GDPR, Art. 15 (1) GDPR"
+IRELAND,26/08/2021,"20,000","Art. 12 (1), (2), (3) GDPR, Art. 15 (1) GDPR"
+IRELAND,03/09/2021,"8,000","Art. 5 (1) c) GDPR, Art. 12 (3) GDPR, Art. 15 GDPR, The Hellenic DPA has imposed a fine of EUR 8,000 on the Rhodes Municipal Transport Company. A former employee had filed a complaint against the controller with the DPA. The former employee was in a legal dispute with the controller after the latter had reported him for alleged embezzlement. Against this background, he had asked the controller to send him, for his defense in the criminal proceedings, a copy of the video recordings recorded by the bus's video surveillance system on the day on which the incident in question allegedly occurred. However, the controller had never responded to his request. 
+The DPA considered this to be a violation of the data subject's right to information pursuant to Art. 12 (3) GDPR and Art. 15 GDPR.
+
+Furthermore, the controller had provided the data subject with a certificate about his previous employment, which, in addition to the type and duration of employment, also contained the information that he had been dismissed due to a criminal offense. The DPA considers this to be a violation of the principle of proportionality pursuant to Art. 5 (1) c) GDPR.
+
+The fine is composed proportionately of EUR 3,000 for a violation of Art. 5 (1) (c) GDPR and EUR 5,000 for a violation of Art. 12 (3) and Art. 15 GDPR."
+IRELAND,26/08/2021,"5,000","Art. 5 (1) a), e) GDPR, Art. 5 (2) GDPR, Art. 6 (1) GDPR, Art. 12 (2), (3) GDPR, Art. 17 GDPR, The Hellenic DPA has imposed a fine of EUR 5,000 on the operator of the medical platform nowdoctor.gr that enables online booking of medical appointments. A doctor had filed a complaint with the DPA. Accordingly, she had repeatedly stated that she no longer wished to work with the controller and requested the deletion of her data on the platform. The controller did not comply with her request. The deletion did not take place until 18 months later, after the DPA requested the controller to do so. The DPA considered this to be a breach of the controller's accountability obligations and found that the controller had stored the data subject's data longer than necessary for the intended purpose. The purpose, namely the provision of online display services, ceased to exist when the data subject declared that she no longer wished to work with the controller. In addition, the DPA finds that the controller failed to take measures with regard to the requirement of Art. 12 GDPR to facilitate the exercise of data subjects' rights. The controller had publicly provided an e-mail address on its website as a means of communication. However, the controller did not have sufficient staff available to actually process the correspondence."
+IRELAND,20/09/2021,"18,000",Art. 5 (1) f) GDPR
+IRELAND,14/09/2021,"40,000",Art. 6 (1) GDPR
+IRELAND,24/09/2021,"900,000","Art. 12 GDPR, Art. 13 GDPR"
+IRELAND,11/12/2020,"3,250","Art. 31 GDPR, The DPA of Isle of Man has imposed a fine of EUR 3,250 on Cosmetic Medical Limited. A data subject had filed a complaint with the DPA regarding the controller's failure to comply with her request to exercise her right of access to personal data. As part of its investigation, the DPA sent the controller a request for information in order to clarify the facts of the case. However, the controller had not responded to this request in due time. The DPA concluded that as the controller did not properly cooperate with the authorities, it violated Article 31 of the GDPR."
+IRELAND,24/09/2021,"3,000","Art. 13 GDPR, The Spanish DPA (AEPD) has imposed a fine of EUR 3,000 on a company. The company had requested various personal data from customers for appointment bookings. The DPA found that the controller failed to properly inform the data subjects about the processing of the data in accordance with Art. 13 GDPR."
+IRELAND,14/09/2021,"56,000",Art. 6 (1) GDPR

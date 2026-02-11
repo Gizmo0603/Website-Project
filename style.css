@@ -153,3 +153,15 @@ html {
   align-items: center;      /* vertical centering */
   height: 700px;            /* same as your SVG height */
 }
+
+.chart-container {
+  display: flex;
+  flex-direction: column; /* stack h2 and chart vertically */
+  align-items: center;    /* center horizontally */
+  gap: 10px;              /* space between h2 and chart */
+}
+
+#my_dataviz {
+  display: flex;
+  justify-content: center; /* center the SVG horizontally */
+}
