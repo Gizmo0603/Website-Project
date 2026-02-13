@@ -133,25 +133,25 @@ html {
   text-align: left;
 }
 
-/* Ensure carousel arrows are visible and z-index above content */
+/* makes sure arrows are visible */
 #myCarousel .carousel-control-prev,
 #myCarousel .carousel-control-next {
-  width: 5%;          /* can increase if needed */
+  width: 5%;          
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
 }
 #myCarousel .carousel-control-prev-icon,
 #myCarousel .carousel-control-next-icon {
-  background-color: rgba(0,0,0,0.5); /* semi-transparent so you can see them */
-  border-radius: 50%;                /* nice circle */
+  background-color: rgba(0,0,0,0.5); /* semi-transparent */
+  border-radius: 50%;                /* circle */
 }
 
 .carousel-item > div {
   display: flex;
   justify-content: center;  /* horizontal centering */
   align-items: center;      /* vertical centering */
-  height: 700px;            /* same as your SVG height */
+  height: 700px;            /* same as SVG height */
 }
 
 .chart-container {
@@ -164,4 +164,49 @@ html {
 #my_dataviz {
   display: flex;
   justify-content: center; /* center the SVG horizontally */
+}
+
+.Section2class {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+}
+
+.Section2class h1{
+  display: flex;
+  justify-content: center;
+}
+
+.Section2class h2{
+  display:flex;
+  justify-content:center
+}
+
+.Section2class p{
+  font-weight: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: left;
+}
+
+.Section2-1class {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.Section2-1class h1{
+  display: flex;
+  justify-content: center;
+}
+
+.Section2-1class h2{
+  display:flex;
+  justify-content:center
+}
+
+.Section2-1class p{
+  font-weight: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: left;
 }
