@@ -61,6 +61,11 @@ h1 { font-size: 2rem; } /* Heading Font size. */
   background-color: darkblue; color: white; 
 }
 
+.sidebar a.sub-section{
+  padding-left: 32px;
+  text-decoration: none;
+}
+
 .sidebar a:hover:not(.active) {
   background-color: #555; color: white;
 }
@@ -104,4 +109,104 @@ html {
 }
 @media screen and (max-width: 400px) {
     .sidebar a { text-align: center; }
+}
+
+.treeview-ul{
+  margin-left: 15rem;
+  text-align: left;
+}
+
+.Section1class {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.Section1class h1{
+  display: flex;
+  justify-content: center;
+}
+
+.Section1class p{
+  font-weight: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: left;
+}
+
+/* makes sure arrows are visible */
+#myCarousel .carousel-control-prev,
+#myCarousel .carousel-control-next {
+  width: 5%;          
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+#myCarousel .carousel-control-prev-icon,
+#myCarousel .carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.5); /* semi-transparent */
+  border-radius: 50%;                /* circle */
+}
+
+.carousel-item > div {
+  display: flex;
+  justify-content: center;  /* horizontal centering */
+  align-items: center;      /* vertical centering */
+  height: 700px;            /* same as SVG height */
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column; /* stack h2 and chart vertically */
+  align-items: center;    /* center horizontally */
+  gap: 10px;              /* space between h2 and chart */
+}
+
+#my_dataviz {
+  display: flex;
+  justify-content: center; /* center the SVG horizontally */
+}
+
+.Section2class {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+}
+
+.Section2class h1{
+  display: flex;
+  justify-content: center;
+}
+
+.Section2class h2{
+  display:flex;
+  justify-content:center
+}
+
+.Section2class p{
+  font-weight: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: left;
+}
+
+.Section2-1class {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.Section2-1class h1{
+  display: flex;
+  justify-content: center;
+}
+
+.Section2-1class h2{
+  display:flex;
+  justify-content:center
+}
+
+.Section2-1class p{
+  font-weight: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: left;
 }
