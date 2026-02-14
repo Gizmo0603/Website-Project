@@ -166,6 +166,7 @@ html {
   justify-content: center; /* center the SVG horizontally */
 }
 
+<<<<<<< Updated upstream
 .Section2class {
   padding-left: 100px;
   padding-right: 100px;
@@ -209,4 +210,130 @@ html {
   padding-left: 200px;
   padding-right: 200px;
   text-align: left;
+=======
+/* The stuff below here is mobile based */
+
+@media (max-width: 768px) {
+
+  /* Toggle button */
+  .togglebtn {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    background: #111;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    z-index: 1100;
+  }
+
+  /* Sidebar dropdown */
+  .sidebar {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 420px;
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+    height: auto;
+    max-height: 75vh;
+    overflow-y: auto;
+    padding: 6px 0;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    display: flex;
+  }
+
+  .sidebar a {
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #222;
+  }
+
+  .sidebar a.sub-section {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  /* Layout width fixes */
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .main {
+    margin-left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 16px !important;
+    padding-top: 80px !important;
+  }
+
+  .Section1class,
+  section {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Remove desktop padding */
+  .Section1class {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .Section1class p {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Typography */
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 16px 0 10px;
+    padding-top: 50px;
+  }
+
+  h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+
+  /* Hero image */
+  .Back-Image {
+    height: 40vh;
+  }
+
+  .Back-Image img {
+    height: auto;
+  }
+
+  .Back-Image h1 {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* GDPR list */
+  .treeview-ul {
+    margin-left: 16px !important;
+    padding-left: 8px !important;
+  }
+
+  .treeview-ul li {
+    margin-bottom: 8px;
+  }
+>>>>>>> Stashed changes
 }

@@ -3,13 +3,21 @@ const main = document.getElementById("main");
 let sidebarOpen = true;
 
 function toggleNav() {
-    sidebar.classList.toggle("collapsed");
-    if (sidebar.classList.contains("collapsed")) {
-        main.style.marginLeft = "40px"; // collapsed sidebar
-    } else {
-        main.style.marginLeft = "200px"; // expanded sidebar
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+        sidebar.classList.toggle("open");
+        return;
     }
-    sidebarOpen = !sidebarOpen;
+
+    // Desktop behavior unchanged
+    sidebar.classList.toggle("collapsed");
+
+    if (sidebar.classList.contains("collapsed")) {
+        main.style.marginLeft = "40px";
+    } else {
+        main.style.marginLeft = "200px";
+    }
 }
 
 
