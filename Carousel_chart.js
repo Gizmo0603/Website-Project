@@ -67,6 +67,24 @@ function drawChart1(divId, csvFile) {
     svg.append("g")
       .call(d3.axisLeft(y).tickFormat(d3.format(",")));
   });
+
+  // X axis label
+svg.append("text")
+  .attr("x", size.width / 2)
+  .attr("y", size.height + margin.bottom - 40)
+  .attr("text-anchor", "middle")
+  .text("Country");
+
+// Y axis label
+svg.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("x", -size.height / 2)
+  .attr("y", -margin.left - 10)   // move further left
+  .attr("text-anchor", "middle")
+  .style("font-size", "14px")
+  .style("font-weight", "bold")
+  .text("Total Fine Amount (€)");
+
 }
 
 /* ================= Chart 2 ================= */
@@ -117,10 +135,28 @@ function drawChart2(divId, csvFile) {
     svg.append("g")
       .call(d3.axisLeft(y));
 
-    svg.append("g")
-      .attr("transform", `translate(0,${size.height})`)
-      .call(d3.axisBottom(x).tickFormat(d3.format(",")));
+svg.append("g")
+  .attr("transform", `translate(0,${size.height})`)
+  .call(d3.axisBottom(x).tickFormat(d3.format(",")))
+  .selectAll("text")
+    .style("font-size", "6px");   // ← adjust as needed
   });
+
+  // X axis label
+  svg.append("text")
+    .attr("x", size.width / 2)
+    .attr("y", size.height + margin.bottom - 5)
+    .attr("text-anchor", "middle")
+    .text("Total Fine Amount (€)");
+
+  // Y axis label
+  svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -size.height / 2)
+    .attr("y", -margin.left + 40)
+    .attr("text-anchor", "middle")
+    .text("Country");
+
 }
 
 /* ================= Chart 3 ================= */
@@ -184,4 +220,19 @@ function drawChart3(divId, csvFile) {
       .attr("stroke-width",2)
       .attr("d", line);
   });
+
+  // X axis label
+svg.append("text")
+  .attr("x", size.width / 2)
+  .attr("y", size.height + margin.bottom - 10)
+  .attr("text-anchor", "middle")
+  .text("Decision Date");
+
+// Y axis label
+svg.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("x", -size.height / 2)
+  .attr("y", -margin.left - 10)
+  .attr("text-anchor", "middle")
+  .text("Cumulative Fine Amount (€)");
 }
