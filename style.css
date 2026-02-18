@@ -212,6 +212,41 @@ html {
   text-align: left;
 }
 
+.Section3class {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.Section3class h1{
+  display: flex;
+  justify-content: center;
+}
+
+.Section3class p{
+  font-weight: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: left;
+}
+
+.Section4class {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.Section4class h1{
+  display: flex;
+  justify-content: center;
+}
+
+.Section4class p{
+  font-weight: 400px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: left;
+}
+
+
 /* The stuff below here is mobile based */
 
 @media (max-width: 768px) {
@@ -339,6 +374,8 @@ html {
 
   .Section2class,
   .Section2-1class,
+  .Section3class,
+  .Section4class,
   .chart-container {
     padding-left: 16px !important;
     padding-right: 16px !important;
@@ -349,7 +386,9 @@ html {
 
   /* Remove paragraph side padding */
   .Section2class p,
-  .Section2-1class p {
+  .Section2-1class p,
+  .Section3class p,
+  .Section4class p {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -357,7 +396,9 @@ html {
   /* Headings spacing */
   .Section2class h1,
   .Section2class h2,
-  .Section2-1class h2 {
+  .Section2-1class h2,
+  .Seection3class h2,
+  .Section4class {
     text-align: center;
     margin-top: 20px;
   }
@@ -371,7 +412,8 @@ html {
   /* Individual charts */
   #chart-1,
   #chart-2,
-  #chart-3 {
+  #chart-3,
+  #countryChart {
     height: 320px !important;
     width: 100% !important;
   }

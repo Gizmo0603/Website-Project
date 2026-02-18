@@ -22,11 +22,14 @@
         <a class="sub-section" href="#Section-1-1">Section 1.1</a> <!-- Sub-sections, they work the same.-->
         <a class="sub-section" href="#Section-1-2">Section 1.2</a>
         <a href="#Section-2">Section 2</a>
-        <a class="sub-section" href="#Section-2-1">Section 1.2</a>
+        <a class="sub-section" href="#Section-2-1">Section 2.1</a>
+        <a class="sub-section" href="#Section-2-2">Section 2.2</a>
         <a href="#Section-3">Section 3</a>
         <a class="sub-section" href="#Section-3-1">Section 3.1</a>
         <a class="sub-section" href="#Section-3-2">Section 3.2</a>
         <a href="#Section-4">Section 4</a>
+        <a class="sub-section" href="#Section-4-1">Section 4.1</a>
+        <a class="sub-section" href="#Section-4-2">Section 4.2</a>
         <a href="#Section-5">References </a>
 
     </div>
@@ -156,38 +159,89 @@
       such as cookies, marketing consent and the likes<sup>3</sup>. With these being minor infractions, they typically rack up a lower average fine value, but because they happen so often, it leads to the fine count skyrocketing.  </p>
                 
     <p> Spain also primarily focuses on domestic cases rather than cross-border cases. Primarily, their targets are local companies, national public bodies and SMEs (Small and Medium Enterprises). SME cases typically are given smaller fines, even when they are more frequent. 
-      As opposed to countries like Luxembourg and Ireland as mentioned previously, who focus on cross-border cases, they tend to yield fewer cases, but significantly larger fines against companies like Meta and TikTok.  </p>
+      As opposed to countries like Luxembourg and Ireland as mentioned previously, who focus on cross-border cases, they tend to yield fewer cases, but significantly larger fines against companies like Meta and TikTok. </p>
+
+    <p> These frequent breaches can be attributed to the consister userbase these two companies (TikTok and Meta) have. With the amount of people using them each day, paired with the amount of data they receive,</p>
 
 </div>
 
+
+<div class="Section3class">
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<section id="Section-3">
+    <section id="Section-3">
 
-  <div class="chart-container">
+      <div class="chart-container">
 
-    <h2 id="Section-3-1">Ireland — GDPR Article Breaches</h2>
+        <h2 id="Section-3-1">Ireland — GDPR Article Breaches</h2>
 
-    <div id="my_dataviz" style="height:600px;"></div>
+        <div id="my_dataviz" style="height:600px;"></div>
+
+      </div>
+
+    </section>
+
+      <script src="Ireland_chart.js"></script>
+
+      <script id="Section-3-2">
+
+       drawIrelandPieChart("Ireland_gdpr.csv", "my_dataviz");
+
+     </script>
+
+     <p> The graph shown above displays the article breaches that ireland faces. The most common of which being article 32 and Article 5 of the GDPR conduct. With comapnies such as Meta or TikTok basing their headquarters out of ireland to comply with having a headquarters in the EU,
+      it is not a surprise to see why these are the most common breaches. </p>
+
+     <p> Article 32 focuses on the security of personal data, requiring these organisations to implement appropriate technical and organised measures to protect said information. Article 5, however, outlines the fundamentals of data processing (As referenced previously).</p>
+
+      <p> With these being the most common breaches, underlining the basics of data protection, it is no surprise that Ireland is the lead enforcer in terms of both fine value and cross border breaches, even despite having less fines than a country like spain. Paired with their 
+      "One-Stop-Shop"<sup>4</sup> method, making Ireland the go-to connection between countries outside of the EU and within the EU. </p>
+
+    </section> 
+
+</div>
+
+<section id="Section-4">
+
+  <div class="Section4class">
+
+    <div class="chart-container">
+
+      <h2 id="Section-4-1">Ireland vs Spain Case Count</h2>
+      <div id="countryChart"></div>
+
+    </div>
+
+      <h2 id="Section4-2"> Spain/Ireland Fine Reasoning for disparity.</h2>
+
+      <p> The reason for this is simple. As mentioned previously, Spains "one-stop-shop" means it handles a variety of cross border cases, which often result in much large fines. Doing this however, takes time as they have to run longer investigations, focus on major violations as 
+        opposed to several smaller ones, and are generally more complex due to being multinational.</p>
+
+      <p> Spain, on the other hand, issues more frequent fines. Specifically to Small and Medium Enterprises (SMEs). These fines, whilst very often smaller in scope than cross-border cases, are enforced strongly. Primarily, they focus on penalizing marketing/consent violations consistently.</p>
+
+      <p> With this, it leads to the disaprity seen in the chart above, in which spain has over a thousand more fines, but looking at the chart in section 2, they still fall far behind Ireland in the total revenue from fines. Based on spain also focusing on SMEs, with fine size depends on
+         company revenue, the fine ceilings are considerably lower for smaller companies, especially so for improper marketing messages and improper data handling. Ireland however, which focus on platform-wide consent failures and cross-border data transfers, often have a larger fine ceiling
+          due to the amount of users affected by it. </p>
 
   </div>
 
 </section>
 
-<script src="Ireland_chart.js"></script>
+<script src="Span/countrychart.js"></script>
 
-<script id="Section-3-2">
-
-  drawIrelandPieChart("Ireland_gdpr.csv", "my_dataviz");
-
+<script>
+  drawCountryBarChart("gdpr_fines.csv", "countryChart");
 </script>
 
-</section> 
+</section>
 
 <div id="Section-5"> <!-- This is references, for everything referenced.-->
 
   <li>[1] - https://gdpr-info.eu/art-5-gdpr/</li>
+  <li>[2]</li>
+  <li>[3]</li>
+  <li>[4] - https://www.cambridge.org/core/journals/european-constitutional-law-review/article/is-centralised-general-data-protection-regulation-enforcement-a-constitutional-necessity/65F232075D5ED87A1CE1E8F642E82206?</li>
 
 </div>
 
