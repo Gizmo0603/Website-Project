@@ -37,8 +37,8 @@ sidebarLinks.forEach(link => {// Swaps the active class to whatever link is clic
 });
 
 
-window.addEventListener("scroll", () => { // Scoll event listener to swap active class that way
-    const scrollPos = window.scrollY + 50; // adjusts for headers.
+window.addEventListener("scroll", () => { // Scoll event listener to swap class that way
+    const scrollPos = window.scrollY + 50; 
 
     sidebarLinks.forEach(link => {
         const section = document.querySelector(link.hash);
